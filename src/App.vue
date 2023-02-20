@@ -1,11 +1,11 @@
 <template>
   <NavComp/>
-    <router-view v-slot="{Component}">
+    <!-- <router-view v-slot="{Component}">
       <Transition name="page-opacity" mode="out-in">
         <component :is="Component" />
       </Transition>
-    </router-view>
-  
+    </router-view> -->
+    <router-view></router-view>
   <FooterComp/>
 </template>
 
@@ -20,7 +20,6 @@ export default {
   }
 </script>
 <script setup>
-import { RouterLink , RouterView } from 'vue-router';
 import { onMounted } from '@vue/runtime-core';
 import { useStore } from 'vuex';
 const store = useStore()

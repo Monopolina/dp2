@@ -8,10 +8,12 @@
       :key="item.id"
       :cart_item_data="item"
       @deleteCart="deleteCart(index)"
+      @increment="increment(index)"
+      @decrement="decrement(index)"
       />
     </div>
     <div class="total">
-      
+      <p>{{ cartTotalCost }} руб</p>
     </div>
   </div>
 </template>
@@ -36,16 +38,40 @@ export default {
   },
   methods: {
     ...mapActions([
-      'DELETE_FROM_CART'
+      'DELETE_FROM_CART',
+      'INCREMENT_CART_ITEM',
+      'DECREMENT_CART_ITEM'
     ]), 
     async deleteCart(index) {
       this.DELETE_FROM_CART(index)
     },
+    async increment(index) {
+      this.INCREMENT_CART_ITEM(index)
+    },
+    async decrement(index) {
+      this.DECREMENT_CART_ITEM(index)
+    }
   },
   computed: {
     ...mapGetters([
-      'CART'
-    ])
+      'CART',
+    ]),
+    cartTotalCost() {
+      let result = []
+
+      if (this.CART.length) {
+        for (let item of this.CART) {
+        result.push (item.price * item.quantity)
+      }
+      result = result.reduce(function (sum, el) {
+        return sum + el;
+      })
+      return result;
+      }
+      else{
+        return 0
+      }
+    }
   }
 
 }
