@@ -1,14 +1,15 @@
 <template>
-  <div class="v-catalog">
   <div class="container">
     <h1>Catalog</h1>
-    <v-catalog-item 
+    <div>
+      <v-catalog-item 
     v-for="product in products"
     :key="product.id"
     v-bind:product_data="product"
     @addtocart="addtocart"
     />
-  </div></div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -24,7 +25,6 @@ export default {
       products: [],
     };
   },
-
   methods: {
     async getproduct() {
       let result = await fetch("http://localhost:3000/magazin", {

@@ -62,7 +62,6 @@ export default createStore({
   },
   actions: {
     async gettokenfromcookie(context){
-      //const token = context.commit("tokenmutation")
       const token = await VueCookieNext.getCookie("token")
       if (token) {
         context.commit("tokenmutation", token)

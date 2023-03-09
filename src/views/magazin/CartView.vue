@@ -22,9 +22,8 @@
 import vCartItem from '@/components/v-cart-item.vue';
 import { mapActions } from 'vuex';
 import { mapGetters } from 'vuex';
-
+import { VueCookieNext } from 'vue-cookie-next'
 export default {
-
   components: {
     vCartItem
   },
@@ -56,7 +55,7 @@ export default {
     ...mapGetters([
       'CART',
     ]),
-    cartTotalCost() {
+     cartTotalCost() {
       let result = []
 
       if (this.CART.length) {
@@ -73,6 +72,5 @@ export default {
       }
     }
   }
-
 }
 </script>

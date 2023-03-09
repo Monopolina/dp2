@@ -4,21 +4,21 @@
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://itznanie.ru/wp-content/uploads/2021/12/666-1.jpg" class="d-block w-100" alt="...">
+        <img src="https://itznanie.ru/wp-content/uploads/2021/12/666-1.jpg" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block" style="background-color:#8540f5b0">
           <h1 class="h-1 text-center">Магазин комплектующих для ПК</h1>
           <p class="display-4 text-center">Видеокарты</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://www.ixbt.com/img/n1/news/2019/9/6/atom-c3000-processor-wafer-16x9.png.rendition.intel.web.1280.720_large.png" class="d-block w-100" alt="...">
+        <img src="https://www.ixbt.com/img/n1/news/2019/9/6/atom-c3000-processor-wafer-16x9.png.rendition.intel.web.1280.720_large.png" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block" style="background-color:#000000bd">
           <h1 class="h-2 text-center">У нас ты найдёшь</h1>
           <p class="display-4 text-center">Процессоры</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://pto-shop.ru/wp-content/uploads/a/0/0/a0067df8f5add9b3ef0c724d0041c059.jpeg" class="d-block w-100" alt="...">
+        <img src="https://pto-shop.ru/wp-content/uploads/a/0/0/a0067df8f5add9b3ef0c724d0041c059.jpeg" class="d-block w-100">
         <div class="carousel-caption d-none d-md-block" style="background-color:#ff0000c2">
             <h1 class="h-2 text-center">Материнские платы</h1>
           <p class="display-4 text-center">И многое другое</p>
@@ -79,7 +79,6 @@
     
   </div>
 </template> 
-
 <script>
 import { mapGetters } from 'vuex';
 export default {

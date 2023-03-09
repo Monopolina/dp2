@@ -1,7 +1,6 @@
 <template>
   <div class="v-catalog-item">
-
-      <div class="card mb-3 mx-auto border-info" style="max-width: 740px;">
+    <div class="card mb-3 mx-auto border-info" style="max-width: 740px;">
         <div class="row g-0 catalog-product__image">
           <div class="catalog-product__image col-md-4" @click="getproductdetels(product_data.id)">
             <img :src=" require('../assets/img/'+product_data.img) " alt="img" class="imgcat">
@@ -17,7 +16,6 @@
           </div>
         </div>
       </div>
-
   </div>
 </template>
 
@@ -27,11 +25,9 @@ export default {
   components: {
     vCatalogItem
   },
-
   data() {
     return {}
   },
-
   props: {
     product_data: {
       type: Object,
@@ -40,7 +36,6 @@ export default {
       }
     }
   },
-
   methods: {
     async getproduct() {
       let result = await fetch("http://localhost:3000/magazin", {
@@ -56,7 +51,6 @@ export default {
       this.$emit('addtocart', this.product_data);
     },
   },
-
   mounted() {
     const CartItemData =  this.product_data;
     CartItemData.quantity = 1;

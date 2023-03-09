@@ -26,8 +26,6 @@
 
 <script>
 import { VueCookieNext } from 'vue-cookie-next'
-import { useStore } from 'vuex';
-import { onMounted } from '@vue/runtime-core';
 export default {
   data() {
     return {
