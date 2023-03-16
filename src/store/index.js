@@ -5,7 +5,7 @@ export default createStore({
   state: { 
     token:"",
     role: "user",
-    cart: []
+    cart: JSON.parse(VueCookieNext.getCookie("cart")) || []
   },
   getters: { 
     token(state){
@@ -40,16 +40,17 @@ export default createStore({
         })
           if (!isProduct) {
             state.cart.push({...product,quantity:1})
-            VueCookieNext.setCookie("cart", state.cart)
+            VueCookieNext.setCookie("cart", JSON.stringify(state.cart))
           }
       }
       else{
         state.cart.push({...product,quantity:1})
-        VueCookieNext.setCookie("cart", state.cart)
+        VueCookieNext.setCookie("cart", JSON.stringify(state.cart))
       }
     },
     REMOVE_FROM_CART: (state, index) => {
       state.cart.splice(index,1)
+      VueCookieNext.setCookie("cart", state.cart)
     },
     INCREMENT: (state,index) => {
       state.cart[index].quantity++

@@ -35,7 +35,7 @@ export default {
   
   methods: {
     async postlogin() {
-       const data = await fetch("http://localhost:3000/login",{
+       const data = await fetch("http://194.67.67.7:3000/login",{
         method: "POST",
         headers:{
           accept: "application/json",
