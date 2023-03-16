@@ -54,10 +54,12 @@ export default createStore({
     },
     INCREMENT: (state,index) => {
       state.cart[index].quantity++
+      VueCookieNext.setCookie("cart", state.cart)
     },
     DECREMENT: (state,index) => {
       if (state.cart[index].quantity > 1){
         state.cart[index].quantity--
+        VueCookieNext.setCookie("cart", state.cart)
       }
     }
   },
