@@ -9,12 +9,12 @@
     <div class="quantity">
       <p>Кол-во:</p>
       <span>
-        <span @click="decrementItem">-</span>
-       {{ cart_item_data.quantity }} 
-       <span @click="incrementItem">+</span>
+        <span @click="decrementItem" class="btn btn-outline-dark">-</span>
+        <button type="button" class="btn btn-light">{{ cart_item_data.quantity }}</button>
+       <span @click="incrementItem" class="btn btn-outline-dark">+</span>
       </span>
       </div>
-    <button @click="deleteCart">Delete</button>
+    <button @click="deleteCart" class="btn btn-danger">Delete</button>
   </div>
 </template>
 

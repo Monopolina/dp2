@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     async getproduct() {
-      let result = await fetch("http://194.67.67.7:3000/magazin", {
+      let result = await fetch("http://localhost:3000/magazin", {
         method: "GET",
 
       });

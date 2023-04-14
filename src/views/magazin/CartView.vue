@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Cart</h1>
+    <h1>Корзина</h1>
     <p v-if="!CART.length">Вы ничего не добавили в корзину</p>
     <div>
       <v-cart-item 

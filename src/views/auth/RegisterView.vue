@@ -42,7 +42,7 @@ export default {
 
   methods: {
     async postregister() {
-       await fetch("http://194.67.67.7:3000/register",{
+       await fetch("http://localhost:3000/register",{
         method: "POST",
         headers:{
           accept: "application/json",

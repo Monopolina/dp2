@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Catalog</h1>
+    <h1>Каталог</h1>
     <div>
       <v-catalog-item 
     v-for="product in products"
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     async getproduct() {
-      let result = await fetch("http://194.67.67.7:3000/magazin", {
+      let result = await fetch("http://localhost:3000/magazin", {
         method: "GET",
 
       });
