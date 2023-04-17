@@ -50,16 +50,16 @@ export default createStore({
     },
     REMOVE_FROM_CART: (state, index) => {
       state.cart.splice(index,1)
-      VueCookieNext.setCookie("cart", state.cart)
+      VueCookieNext.setCookie("cart", JSON.stringify(state.cart))
     },
     INCREMENT: (state,index) => {
       state.cart[index].quantity++
-      VueCookieNext.setCookie("cart", state.cart)
+      VueCookieNext.setCookie("cart", JSON.stringify(state.cart))
     },
     DECREMENT: (state,index) => {
       if (state.cart[index].quantity > 1){
         state.cart[index].quantity--
-        VueCookieNext.setCookie("cart", state.cart)
+        VueCookieNext.setCookie("cart", JSON.stringify(state.cart))
       }
     }
   },

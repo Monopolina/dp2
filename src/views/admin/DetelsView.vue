@@ -4,7 +4,7 @@
     <div class="card border-info mb-3" align="center" style="max-width: 40rem;">
       <div class="card-body">
         <div class="card-header">id: {{ product.id }}</div>
-        <p class="card-text">Продукт: {{ product.product }}</p>
+        <p class="card-text">Продукт: {{ product.product_name }}</p>
         <p class="card-text">id категории: {{ product.id_categori }}</p>
         <p class="card-text">Цена: {{ product.price }}</p>
         <p class="card-text">img: {{ product.img }}</p>
