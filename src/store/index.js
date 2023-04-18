@@ -98,7 +98,7 @@ export default createStore({
       commit('SET_CART', product);
     },
     async DELETE_FROM_CART({commit}, index) {
-      commit('REMOVE_FROM_CART', 'index')
+      commit('REMOVE_FROM_CART', index)
     },
     async INCREMENT_CART_ITEM({commit}, index){
       commit('INCREMENT', index)

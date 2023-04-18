@@ -22,7 +22,6 @@
 import vCartItem from '@/components/v-cart-item.vue';
 import { mapActions } from 'vuex';
 import { mapGetters } from 'vuex';
-import { VueCookieNext } from 'vue-cookie-next'
 export default {
   components: {
     vCartItem

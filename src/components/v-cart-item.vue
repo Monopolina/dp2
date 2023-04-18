@@ -40,6 +40,5 @@ export default {
       this.$emit('deleteCart')
     }
   }
-
 }
 </script>
