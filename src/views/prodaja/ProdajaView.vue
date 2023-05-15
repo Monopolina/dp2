@@ -10,10 +10,10 @@
       <table class="table">
         <thead>
           <th>id</th>
-          <th>Продукт</th>
-          <th>id категории</th>
-          <th>Цена</th>
-          <th>img</th>
+          <th>Модель</th>
+          <th>Диоганаль</th>
+          <th>Разрешение</th>
+          <th>Вес</th>
           <th></th>
           <th></th>
           <th></th>
@@ -21,10 +21,10 @@
         <tbody key="componentKey">
           <tr v-for="product in products" :key="product">
             <td>{{ product.id }}</td>
-            <td>{{ product.product_name }}</td>
-            <td>{{ product.id_categori }}</td>
-            <td>{{ product.price }}</td>
-            <td>{{ product.img }}</td>
+            <td>{{ product.model }}</td>
+            <td>{{ product.diagonal }}</td>
+            <td>{{ product.razrech }}</td>
+            <td>{{ product.ves }}</td>
             <td><button @click="getproductdetels(product.id)" class="btn btn-outline-info m-1">Детали</button></td>
             <td><button @click="getproductedit(product.id)" class="btn btn btn-outline-warning m-1">Изменить</button></td>
             <td><button @click="button(product.id)" class="btn btn-danger m-1">Удлаить</button></td>
@@ -37,7 +37,6 @@
 </template>
 
 <script>
-import store from '@/store';
 export default {
   data() {
     return {
@@ -53,7 +52,7 @@ export default {
         headers: {
           accept: "application/json",
           "content-type": "application/json",
-          "Authorization": `Bearer ${store.getters.token}`,
+          
         }
       });
       this.products = await result.json();
@@ -63,8 +62,7 @@ export default {
         method: "GET",
         headers: {
           accept: "application/json",
-          "content-type": "application/json",
-          "Authorization": `Bearer ${store.getters.token}`,
+          "content-type": "application/json"          
         }
       });
       this.products = await result.json();

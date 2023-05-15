@@ -16,50 +16,25 @@
           <router-link :to="{name: 'about'}">
             <li><a href="" class="nav-link px-2 text-black">Контакты</a></li>
           </router-link>
-          <router-link :to="{name: 'AdminView'}">
-            <li><a href="" class="nav-link px-2 text-black" v-if="store.getters.isAdmin === 'admin'">Таблица</a></li>
+          <router-link :to="{name: 'ProdajaView'}">
+            <li><a href="" class="nav-link px-2 text-black">Таблица продажа</a></li>
           </router-link>
-          <router-link :to="{name: 'MagazinView'}">
-            <li><a href="" class="nav-link px-2 text-black">Магазин</a></li>
+          <router-link :to="{name: 'RemontView'}">
+            <li><a href="" class="nav-link px-2 text-black">Таблица ремонт</a></li>
           </router-link>
         </ul>
 
         <div class="text-end">
-          <router-link :to="{name: 'CartView', params: {cart_data: CART}}">
-            <button type="button" class="btn btn-outline me-2"><a class="nav-link text-black" href="/CartView">Корзина: {{CART.length}}</a></button>
-          </router-link>
-          <router-link :to="{name: 'login'}">
-            <button v-if="!store.getters.isAuthorized" type="button" class="btn btn-outline me-2"><a class="nav-link text-black" href="">Войти</a></button>
-          </router-link>
-          <router-link :to="{name: 'register'}">
-            <button v-if ="!store.getters.isAuthorized" type="button" class="btn btn-outline me-2"><a class="nav-link text-black" href="">Регистрация</a></button>
-          </router-link>
-          <button v-if="store.getters.isAuthorized" @click="exit()" type="button" class="btn btn-outline me-2">Выйти</button>
+          <div>vk</div>
         </div>
 
       </div>
     </div>
   </header>
 </template>
+
 <script>
-import { mapGetters } from 'vuex';
 export default {
   name:'NavComp',
-  computed: {
-      ...mapGetters([
-        'CART'
-      ])
-    },
 }
-</script>
-<script setup>
-import { VueCookieNext } from 'vue-cookie-next'
-import { useStore } from 'vuex';
-const store = useStore()
-const exit = async()=>{
-      await VueCookieNext.removeCookie("token")
-      await store.dispatch("gettokenfromcookie")
-      window.location.reload()
-    } 
-    
 </script>
