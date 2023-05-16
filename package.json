@@ -13,6 +13,7 @@
     "core-js": "^3.8.3",
     "fastify": "^4.11.0",
     "fastify-cors": "^6.1.0",
+    "jquery": "^3.7.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.28.0",
     "vue": "^3.2.13",

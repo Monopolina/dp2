@@ -1,36 +1,39 @@
 <template>
-  <header class="p-3">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none">
-          <img src="https://cdn-icons-png.flaticon.com/128/4564/4564517.png" alt="Bootstrap" width="50" height="50">
-        </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <router-link :to="{name: 'home'}">
-            <li><a href="" class="nav-link px-2 text-black">Главная</a></li>
-          </router-link>
-          <router-link :to="{name: 'nas'}">
-            <li><a href="" class="nav-link px-2 text-black">О нас</a></li>
-          </router-link>
-          <router-link :to="{name: 'about'}">
-            <li><a href="" class="nav-link px-2 text-black">Контакты</a></li>
-          </router-link>
-          <router-link :to="{name: 'ProdajaView'}">
-            <li><a href="" class="nav-link px-2 text-black">Таблица продажа</a></li>
-          </router-link>
-          <router-link :to="{name: 'RemontView'}">
-            <li><a href="" class="nav-link px-2 text-black">Таблица ремонт</a></li>
-          </router-link>
-        </ul>
-
-        <div class="text-end">
-          <div>vk</div>
+    <div class="container pt-5">
+      <div class="row justify-content-between">
+        <div class="col">
+          <a class="navbar-brand" href="index.html">Продажа и ремонт <span>мониторов</span></a>
         </div>
-
+          <div class="col d-flex justify-content-end">
+            <div class="social-media">
+              <p class="mb-0 d-flex">
+                  <a href="https://vk.com/studious" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                  <a href="https://vk.com/studious" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                  <a href="https://vk.com/studious" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                  <a href="https://vk.com/studious" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+              </p>
+            </div>
+        </div>
       </div>
     </div>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span> Меню
+      </button>
+        
+      <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a href="/" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">О нас</a></li>	        	
+        <li class="nav-item"><a href="/contact" class="nav-link">Контакты</a></li>
+        <li class="nav-item"><a href="/RemontView" class="nav-link">таблица_ремонта</a></li>
+        <li class="nav-item"><a href="/ProdajaView" class="nav-link">таблица_продажи</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
 <script>

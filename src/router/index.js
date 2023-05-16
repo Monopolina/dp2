@@ -13,8 +13,8 @@ const routes = [
     component: () => import('../views/AboutView.vue')
   },
   {
-    path: '/nas',
-    name: 'nas',
+    path: '/contact',
+    name: 'contact',
     component: () => import('../views/ContactView.vue')
   },
   {

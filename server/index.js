@@ -16,7 +16,7 @@ fastify.register(require('@fastify/cors'), {
 
 fastify.route({
   method: 'GET',
-  url: '/product', 
+  url: '/prodaja', 
   handler: (req, res) => {
     pool.query("SELECT * FROM prodaja", (err, result) => {
       if (err) { res.send(err) }
@@ -38,7 +38,7 @@ fastify.route({
 
 fastify.route({
   method: 'POST',
-  url: '/product/create', 
+  url: '/prodaja/create', 
   handler: (req, res) => {
         const params = [req.body.model, req.body.diagonal , req.body.razrech, req.body.ves, req.body.urkost, req.body.kontrasnost, req.body.garanti, req.body.cena, req.body.rassrochka];
         pool.query("INSERT INTO prodaja (model, diagonal, razrech, ves, urkost, kontrasnost, garanti, cena, rassrochka) VALUES (?,?,?,?,?,?,?,?,?)", params, (err, result) => {
@@ -62,7 +62,7 @@ fastify.route({
 
 fastify.route({
   method: 'GET',
-  url: '/product/delete/:id',
+  url: '/prodaja/delete/:id',
   handler: (req, res) => {
     pool.query("DELETE FROM prodaja WHERE id=?", [req.params.id], (err, result) => {
       if (err) { res.send(err) }
@@ -84,7 +84,7 @@ fastify.route({
 
 fastify.route({
   method: 'GET',
-  url: '/product/:id', 
+  url: '/prodaja/:id', 
   handler: (req, res) => {
     pool.query("SELECT * FROM prodaja WHERE id=?", [req.params.id], (err, result) => {
       if (err) { res.send(err) }
@@ -106,7 +106,7 @@ fastify.route({
 
 fastify.route({
   method: 'POST',
-  url: '/product/edit', 
+  url: '/prodaja/edit', 
   handler: (req, res) => {
     const params = [req.body.model, req.body.diagonal , req.body.razrech, req.body.ves, req.body.urkost, req.body.kontrasnost, req.body.garanti, req.body.cena, req.body.rassrochka, req.body.id];
       pool.query("UPDATE prodaja SET model=?, diagonal=?, razrech=?, ves=?, urkost=?, kontrasnost=?, garanti=?, cena=?, rassrochka=? WHERE id=?", params, (err, result) => {

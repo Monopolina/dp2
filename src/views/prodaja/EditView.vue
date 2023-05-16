@@ -56,7 +56,7 @@ export default {
 
   methods: { 
     async getproductedit() {
-      let result = await fetch("http://localhost:3000/product/"+ this.$route.params.id, {
+      let result = await fetch("http://localhost:3000/prodaja/"+ this.$route.params.id, {
         method: "GET",
         headers: {
           accept: "application/json",
@@ -66,7 +66,7 @@ export default {
       this.product = await result.json();
     },
     async editproduct() {      
-      await fetch("http://localhost:3000/product/edit", {
+      await fetch("http://localhost:3000/prodaja/edit", {
         method: "POST",
         headers: {
           accept: "application/json",

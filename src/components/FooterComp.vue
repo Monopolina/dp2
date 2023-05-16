@@ -1,12 +1,25 @@
 <template>
-      <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Главная</a></li>
-      <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">О нас</a></li>
-      <li class="nav-item"><a href="/nas" class="nav-link px-2 text-muted">Контакты</a></li>
-      <li class="nav-item"><a href="/ProdajaView" class="nav-link px-2 text-muted" >Таблица продажа</a></li>
-      <li class="nav-item"><a href="/RemontView" class="nav-link px-2 text-muted">Таблица ремонт</a></li>
-    </ul>
-    <p class="text-center text-muted">© 2022 Company, Inc</p>
+  <footer class="footer">
+    <div class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-md-9 py-5">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Сайт Мурашкин Данила</h2>
+              <p>Спасибо что посетили наш сайт</p>
+              <ul class="ftco-footer-social p-0">
+                <li class="ftco-animate"><a href="https://vk.com/studious" data-toggle="tooltip" data-placement="top"
+                    title="Twitter"><span class="ion-logo-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://vk.com/studious" data-toggle="tooltip" data-placement="top"
+                    title="Facebook"><span class="ion-logo-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://vk.com/studious" data-toggle="tooltip" data-placement="top"
+                    title="Instagram"><span class="ion-logo-instagram"></span></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>

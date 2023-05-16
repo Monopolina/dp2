@@ -47,7 +47,7 @@ export default {
 
   methods: {
     async getproduct() {
-      let result = await fetch("http://localhost:3000/product", {
+      let result = await fetch("http://localhost:3000/prodaja", {
         method: "GET",
         headers: {
           accept: "application/json",
@@ -58,7 +58,7 @@ export default {
       this.products = await result.json();
     },
     async deleteproduct(id) {
-      let result = await fetch("http://localhost:3000/product/delete/"+ id, {
+      let result = await fetch("http://localhost:3000/prodaja/delete/"+ id, {
         method: "GET",
         headers: {
           accept: "application/json",
