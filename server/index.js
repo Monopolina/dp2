@@ -226,8 +226,8 @@ fastify.route({
         pool.query("SELECT id FROM provider WHERE name_provider LIKE ?", [req.body.provider_name], (err, result2) => {
           if (err) { res.send(err) }
           else {
-            const params = [req.body.product_name, result1[0].id, req.body.price, req.body.img, req.body.available_in_stock, req.body.delivery, req.body.description, req.body.characteristic, result2[0].id];
-            pool.query("UPDATE product SET (product_name, id_categori, price, img, available_in_stock, delivery, description, characteristic, id_provider) VALUES (?,?,?,?,?,?,?,?,?)", params, (err, result) => {
+            const params = [req.body.product_name, result1[0].id, req.body.price, req.body.img, req.body.available_in_stock, req.body.delivery, req.body.description, req.body.characteristic, result2[0].id, req.body.id];       
+            pool.query("UPDATE product SET product_name=?, id_categori=?, price=?, img=?, available_in_stock=?, delivery=?, description=?, characteristic=?, id_provider=? WHERE id=?", params, (err, result) => {
               if (err) { res.send(err) }
               else { res.send(result) }
             })
@@ -237,6 +237,10 @@ fastify.route({
     })
   }
 })
+
+     
+    
+  
 
 fastify.listen({ port: 3000, host: '0.0.0.0' }, err => {
   if (err) throw err

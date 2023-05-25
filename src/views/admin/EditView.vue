@@ -7,14 +7,14 @@
           <input v-model="product.product_name" type="text" class="form-control" placeholder="Продукт"/>
         </div>
         <div class="col-md-6">
-          <label class="form-label">id категории</label>
-          <input v-model="product.id_categori" type="number" class="form-control" placeholder="Цена"/>
-          <!-- <select class="form-select" v-model="selected_categori">
+          <label class="form-label">id категории</label>         
+          <select class="form-select" v-model="selected_categori">
+            <option disabled >Сейчас выбрано: {{selected_categori.categoria}}</option>
             <option v-for="categori in categoris" :key="categori">
-              {{ categori.categoria }}
-            </option>
-          </select> -->
-        </div>
+            {{ categori.categoria }}
+            </option>        
+          </select>
+        </div>   
         <div class="col-md-6">
           <label class="form-label">Цена</label>
           <input v-model="product.price" type="number" class="form-control" placeholder="Цена"/>
@@ -40,21 +40,19 @@
           <input v-model="product.characteristic" type="text" class="form-control" placeholder="Характеристика"/>
         </div>
         <div class="col-md-6">
-          <label class="form-label">id поставщика</label>
-          <input v-model="product.id_provider" type="number" class="form-control" placeholder="Характеристика"/>
-          
-          <!-- <select class="form-select" v-model="selected_provider">
+          <label class="form-label">id поставщика</label>          
+          <select class="form-select" v-model="selected_provider">
+            <option disabled >Сейчас выбрано: {{selected_provider.name_provider}}</option>
             <option v-for="provider in providers" :key="provider">
               {{ provider.name_provider }}
             </option>
-          </select> -->
+          </select>
         </div>
         <div align="center">
           <input @click="editproduct" type="submit" value="Отправить" class="btn btn-danger m-1"/>
           <a href="/AdminView" class="btn btn-secondary m-1">Вернуться на таблицу</a>
         </div>
-      </form>
-     {{ product }}
+      </form>     
     </div>   
 </template>
 
@@ -84,7 +82,7 @@ export default {
       this.products = await result.json();
     },
     async getproductedit() {
-      //let result = await fetch("http://localhost:3000/product/"+ this.$route.params.id);
+      
       let result = await fetch("http://localhost:3000/product/"+ this.$route.params.id, {
         method: "GET",
         headers: {
@@ -94,6 +92,8 @@ export default {
         }
       });
       this.product = await result.json();
+      this.selected_categori = this.categoris.find(el => el.id === this.product.id_categori)
+      this.selected_provider = this.providers.find(el => el.id === this.product.id_provider)
     },
     async editproduct() {
       this.product.provider_name = this.selected_provider
@@ -133,10 +133,10 @@ export default {
     },
   },
  
-  mounted() {
-    this.getproduct();
-    this.getprovider();
+  async mounted() {
     this.getcategori();
+    this.getprovider();
+    this.getproduct();        
     this.getproductedit();
   },
 };
