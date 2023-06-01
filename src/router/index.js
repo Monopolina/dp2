@@ -63,6 +63,11 @@ const routes = [
     component: () => import('../views/magazin/MagazinView.vue'),
   },
   {
+    path: '/catalog',
+    name: 'catalog',
+    component: () => import('../views/categori/CatalogView.vue'),
+  },
+  {
     path: '/ProductView/:id',
     name: 'ProductView',
     component: () => import('../views/magazin/ProductView.vue'),

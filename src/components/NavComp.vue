@@ -1,6 +1,6 @@
 <template>
-  <header class="p-3">
-    <div class="container">
+  <header class="p-3 shadow">
+    <div class="container ">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none">
           <img src="https://cdn-icons-png.flaticon.com/128/4564/4564517.png" alt="Bootstrap" width="50" height="50">

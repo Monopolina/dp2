@@ -196,6 +196,17 @@ fastify.route({
 
 fastify.route({
   method: 'GET',
+  url: '/product/categori',
+  handler: (req, res) => {
+    pool.query("SELECT * FROM categori", (err, result) => {
+      if (err) { res.send(err) }
+      else { res.send(result) }
+    })
+  },
+})
+
+fastify.route({
+  method: 'GET',
   url: '/product/delete/:id', preHandler: AdminGuard,
   handler: (req, res) => {
     pool.query("DELETE FROM product WHERE id=?", [req.params.id], (err, result) => {

@@ -5,16 +5,17 @@
 <div class="row">
 <div class="col-lg-6 mb-5 ftco-animate fadeInUp ftco-animated">
 <a href="" class="image-popup">
-  <img src="'../../assets/img/'+product.img" alt="">
-  <!-- <img :src=" require('../../assets/img/'+product.img) "> -->
-  <!-- <img :src="userWithIcon.img" class="img-fluid"> -->
+  
+    
+    <img :src="productWithIcon.icon" alt="img" class="imgcat">
+
 </a>
 </div>
 <div class="col-lg-6 product-details pl-md-5 ftco-animate fadeInUp ftco-animated">
-<h3>Young Woman Wearing Dress</h3>
-<p class="price"><span>$120.00</span></p>
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+<h3>{{ product.product_name }}</h3>
+<p class="price"><span>{{ product.price }} руб.</span></p>
+<p>{{ product.description }}</p>
+<p>{{ product.characteristic }}
 </p>
 <div class="row mt-4">
 <div class="col-md-6">
@@ -39,7 +40,7 @@
 </span>
 </div>
 </div>
-<p><a href="cart.html" class="btn btn-primary py-3 px-5">Add to Cart</a></p>
+<p><a href="cart.html" class="btn btn-primary py-3 px-5 ">Add to Cart</a></p>
 </div>
 </div>
 </div>
@@ -64,11 +65,11 @@
   </div>
 </template>
 <script>
-import store from '@/store';
+
 export default {
   data() {
     return {
-      product:{},
+      product:{},      
     };
   },
 
@@ -85,8 +86,8 @@ export default {
       
     },
   },
-  computed: {
-  userWithIcon () {
+  computed: {  
+    productWithIcon () {
     return {
       ...this.product, 
       icon: this.product.img && require(`../../assets/img/${this.product.img}`)
