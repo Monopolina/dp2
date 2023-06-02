@@ -83,27 +83,7 @@ export default {
 </script>
 <style>
 .aa:hover {
-    color: #43afc2; /* Цвет ссылки при наведении на нее курсора мыши */  
+    color: #00d9ff; /* Цвет ссылки при наведении на нее курсора мыши */  
     text-decoration: underline; /* Добавляем подчеркивание */
-   }
- .v-pag{
-  display: flex;
-  flex-wrap: center;
-  margin-top: 30px;
- }  
- .page{
-  padding:8px ;
-  margin-right: 10px;
-  border: solid 1px #e7e7e7;
- }
- .page:hover {
-  background: #d4d4d4;
-  cursor: pointer;
-  color: #e7e7e7;
- }
- .page-sele{
-   background: #49e4ff;
-  cursor: pointer;
-  color: #e7e7e7;
- }   
+   }  
 </style>
