@@ -36,37 +36,12 @@ const routes = [
     path: '/register',
     name: 'register',
     component: () => import('../views/auth/RegisterView.vue')
-  },
-  {
-    path: '/YctrRasshi',
-    name: 'YctrRasshi',
-    component: () => import('../views/categori/YctrRasshi.vue')
-  },
-  {
-    path: '/OcnComplpc',
-    name: 'OcnComplpc',
-    component: () => import('../views/categori/OcnComplpc.vue')
-  },
-  {
-    path: '/ModingAnd',
-    name: 'ModingAnd',
-    component: () => import('../views/categori/ModingAnd.vue')
-  },
-  {
-    path: '/ComplServer',
-    name: 'ComplServer',
-    component: () => import('../views/categori/ComplServer.vue')
-  },
+  }, 
   {
     path: '/MagazinView',
     name: 'MagazinView',
     component: () => import('../views/magazin/MagazinView.vue'),
-  },
-  {
-    path: '/catalog',
-    name: 'catalog',
-    component: () => import('../views/categori/CatalogView.vue'),
-  },
+  },  
   {
     path: '/ProductView/:id',
     name: 'ProductView',

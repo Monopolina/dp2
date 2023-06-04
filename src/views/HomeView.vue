@@ -40,7 +40,7 @@
     </div>
 
     <div class="subcategory__item-container">			
-      <a class="subcategory__item ui-link ui-link" href="/OcnComplpc">					<div class="subcategory__content">
+      <a class="subcategory__item ui-link ui-link" >					<div class="subcategory__content">
           <div class="subcategory__image"><picture><source type="image/webp" media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png.webp" srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png.webp"><source media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png" srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png"><img class="subcategory__image-content loaded" alt="" data-src="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png" src="https://c.dns-shop.ru/thumb/st1/fit/220/150/5cc514b146e2915d756d0ec350cc6190/4b97445b101cbc23f24c271d9f6352e55d32a22dec5f3fc9048ae849f7c2dfb9.png" data-was-processed="true"></picture></div>
           <span class="subcategory__title">Основные комплектующие для ПК</span>
         </div>
@@ -49,7 +49,7 @@
         <div class="subcategory__childs"></div>
         </a>
                       
-      <a class="subcategory__item ui-link ui-link_blue" href="/YctrRasshi">					<div class="subcategory__content">
+      <a class="subcategory__item ui-link ui-link_blue" >					<div class="subcategory__content">
           <div class="subcategory__image"><picture><source type="image/webp" media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg.webp" srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg.webp"><source media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg" srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg"><img class="subcategory__image-content loaded" alt="" data-src="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg" src="https://c.dns-shop.ru/thumb/st4/fit/220/150/3c04d886917e6a9d6e2bbd653904d9ff/001e15e1b809f1dacbfa7d2eb3f95dba5cb5552ea55c1b84aa6a8f1bca495fac.jpg" data-was-processed="true"></picture></div>
           <span class="subcategory__title">Устройства расширения</span>
         </div>
@@ -58,7 +58,7 @@
         <div class="subcategory__childs"></div>
         </a>
                       
-      <a class="subcategory__item ui-link ui-link_blue" href="/ModingAnd">					<div class="subcategory__content">
+      <a class="subcategory__item ui-link ui-link_blue" >					<div class="subcategory__content">
         <div class="subcategory__image"><picture><source type="image/webp" media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg.webp" srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg.webp"><source media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg" srcset="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg"><img class="subcategory__image-content loaded" alt="" data-src="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg" src="https://c.dns-shop.ru/thumb/st4/fit/220/150/5438800cbab827616a88cb26bebf1764/746949c94e4c9edf6616a18338c0690448fe99dff702eb94ad2b741b6ded5880.jpg" data-was-processed="true"></picture></div>
         <span class="subcategory__title">Моддинг и обслуживание</span>
       </div>
@@ -67,7 +67,7 @@
       <div class="subcategory__childs"></div>
       </a>
                       
-      <a class="subcategory__item ui-link ui-link_blue" href="/ComplServer">					<div class="subcategory__content">
+      <a class="subcategory__item ui-link ui-link_blue" >					<div class="subcategory__content">
         <div class="subcategory__image"><picture><source type="image/webp" media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg.webp" srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg.webp"><source media="(max-width: 767px)" data-srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg" srcset="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg"><img class="subcategory__image-content loaded" alt="" data-src="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg" src="https://c.dns-shop.ru/thumb/st1/fit/220/150/3f75efc659baea0ea63a417fc534ff28/1e15d6c32b6caeb028b29178f21bbc8bee0ade279d5354ee307dfb67906b9396.jpg" data-was-processed="true"></picture></div>
         <span class="subcategory__title">Комплектующие для сервера</span>
       </div>

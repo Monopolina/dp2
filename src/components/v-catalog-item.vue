@@ -39,8 +39,7 @@ export default {
   methods: {
     async getproduct() {
       let result = await fetch("http://localhost:3000/magazin", {
-        method: "GET",
-
+        method: "GET"
       });
       this.products = await result.json();
     },

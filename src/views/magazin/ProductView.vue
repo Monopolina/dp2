@@ -15,8 +15,7 @@
               <span>{{ product.price }} руб.</span>
             </p>
             <p>
-              <button class="btn btn-primary py-3 px-5" @click="addcart">Добавить в корзину</button>
-              
+              <button class="btn btn-primary py-3 px-5" @click="paddcart">Добавить в корзину</button>              
             </p>
           </div>
         </div>
@@ -26,13 +25,15 @@
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
+import { mapActions } from 'vuex';
 export default {
   data() {
     return {
       product: {},
     };
   },
-
+    
   methods: {
     async getproductdetels() {
       let result = await fetch(
@@ -47,22 +48,29 @@ export default {
       );
       this.product = await result.json();
     },
-    async addcart(){
-      this.$emit('addtocart', this.product_data);
-    },
+    ...mapActions([
+      'ADD_TO_CART',
+    ]),    
+    async paddcart() {      
+      this.ADD_TO_CART(this.product)
+    }
   },
   computed: {
+    ...mapGetters([
+        'CART'
+      ]),
     productWithIcon() {
       return {
         ...this.product,
         icon:
           this.product.img && require(`../../assets/img/${this.product.img}`),
       };
-    },
+    },    
   },
 
   mounted() {
     this.getproductdetels();
+    
   },
 };
 </script>
