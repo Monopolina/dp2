@@ -13,26 +13,12 @@ global.pool = pool;
 fastify.register(require('@fastify/cors'), {
   origin: true
 })
-
+const { AdminGuard } = require("./guards/admin.guard.js")
 fastify.register(require('@fastify/jwt'), { secret: 'supersecret' })
 fastify.register(require('@fastify/auth'))
 
 fastify.decorate('verifyJWTandLevel', verifyJWTandLevel)
 fastify.decorate('verifyUserAndPassword', verifyUserAndPassword)
-
-const AdminGuard = (req, res, done) => {
-  try {
-    const token = req.headers.authorization.replace("Bearer ", "")
-    fastify.jwt.verify(token, (err, decoded) => {
-      if (err) {
-        res.code(403).send(err)
-      }
-      done()
-    })
-  } catch (error) {
-    res.code(403).send(error)
-  }
-}
 
 fastify.route({
   method: 'POST',

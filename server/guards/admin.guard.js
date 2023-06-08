@@ -12,4 +12,3 @@ const AdminGuard = (req, res, done) => {
     res.code(403).send(error)
   }
 }
-exports.AdminGuard = AdminGuard
