@@ -93,7 +93,9 @@ function verifyJWTandLevel(request, reply, done) {
   })
 }
 
-function verifyUserAndPassword(request, reply, done) {
+module.exports = verifyUserAndPassword;
+
+function verifyUserAndPassword(request , reply , done) {
   pool.query("SELECT * FROM users WHERE user=?", [request.body.user], (err, result, fields) => {
     console.log(result[0])
     if (err) reply.status(401).send(err)
