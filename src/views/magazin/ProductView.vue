@@ -37,7 +37,7 @@ export default {
   methods: {
     async getproductdetels() {
       let result = await fetch(
-        "http://localhost:3000/tovar/" + this.$route.params.id,
+        "https://magazinpc.apt0.ru/tovar/" + this.$route.params.id,
         {
           method: "GET",
           headers: {

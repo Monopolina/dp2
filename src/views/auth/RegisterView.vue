@@ -42,7 +42,7 @@ export default {
 
   methods: {
     async postregister() {
-       await fetch("http://localhost:3000/register",{
+       await fetch("https://magazinpc.apt0.ru/register",{
         method: "POST",
         headers:{
           accept: "application/json",

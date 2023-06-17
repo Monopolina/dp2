@@ -48,7 +48,7 @@ export default {
 
   methods: {
     async getproduct() {
-      let result = await fetch("http://localhost:3000/product", {
+      let result = await fetch("https://magazinpc.apt0.ru/product", {
         method: "GET",
         headers: {
           accept: "application/json",
@@ -59,7 +59,7 @@ export default {
       this.products = await result.json();
     },
     async deleteproduct(id) {
-      let result = await fetch("http://localhost:3000/product/delete/"+ id, {
+      let result = await fetch("https://magazinpc.apt0.ru/product/delete/"+ id, {
         method: "GET",
         headers: {
           accept: "application/json",

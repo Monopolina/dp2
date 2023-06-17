@@ -71,7 +71,7 @@ export default {
 
   methods: {
     async getproduct() {
-      let result = await fetch("http://localhost:3000/product", {
+      let result = await fetch("https://magazinpc.apt0.ru/product", {
         method: "GET",
         headers: {
           accept: "application/json",
@@ -84,7 +84,7 @@ export default {
     async createproduct() {
       this.product.provider_name = this.selected_provider
       this.product.categori_name = this.selected_categori
-      await fetch("http://localhost:3000/product/create", {
+      await fetch("https://magazinpc.apt0.ru/product/create", {
         method: "POST",
         headers: {
           accept: "application/json",
@@ -96,7 +96,7 @@ export default {
       await this.$router.push('/AdminView')
     },
     async getprovider() {
-      let result = await fetch("http://localhost:3000/product/selectprovider", {
+      let result = await fetch("https://magazinpc.apt0.ru/product/selectprovider", {
         method: "GET",
         headers: {
           accept: "application/json",
@@ -107,7 +107,7 @@ export default {
       this.providers = await result.json();
     },
     async getcategori() {
-      let result = await fetch("http://localhost:3000/product/selectcategori", {
+      let result = await fetch("https://magazinpc.apt0.ru/product/selectcategori", {
         method: "GET",
         headers: {
           accept: "application/json",

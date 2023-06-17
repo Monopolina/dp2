@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     async getproduct() {
-      let result = await fetch("http://localhost:3000/magazin", {
+      let result = await fetch("https://magazinpc.apt0.ru/magazin", {
         method: "GET",
 
       });

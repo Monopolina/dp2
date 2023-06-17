@@ -35,7 +35,7 @@ export default {
   
   methods: {
     async postlogin() {
-       const data = await fetch("http://localhost:3000/login",{
+       const data = await fetch("https://magazinpc.apt0.ru/login",{
         method: "POST",
         headers:{
           accept: "application/json",
